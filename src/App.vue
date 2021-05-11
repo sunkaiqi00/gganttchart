@@ -28,7 +28,7 @@ import {
   // TOP_RIGHT
 } from './constant.js'
 import moment from 'moment'
-const time = moment('2020-03-03 06:30', 'YYYY-MM-DD h:mm')
+const time = moment('2020-03-03 06:30')
 console.log(time)
 
 export default {

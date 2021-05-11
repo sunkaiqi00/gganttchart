@@ -1,8 +1,8 @@
 <template>
   <div class="timeaxis-date">
     <div class="date-title"
-     :style="{ background: dateTitleBackground }"
     >
+    <!-- :style="{ background: dateTitleBackground }" -->
       {{ dateTitle }}
     </div>
     <ul class="mouth-day">
@@ -18,13 +18,11 @@
 export default {
   name: 'TimeaxisDate',
   props: {
-    dateTitle: {
-      type: String,
-      default: ''
-    },
-    dateTitleBackground: {
-      type: String,
-      default: '#fff'
+    dateData: Object
+  },
+  data() {
+    return {
+      dateTitle: ''
     }
   },
   methods: {
@@ -32,6 +30,9 @@ export default {
       const num = day - 1
       return num < 10 ? '0' + num : num
     }
+  },
+  mounted() {
+    console.log(this.dateData)
   }
 }
 </script>

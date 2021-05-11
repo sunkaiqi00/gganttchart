@@ -91,12 +91,12 @@ export const rowList = [
 export const chartDate = [
   {
     id: 1,
-    title: 'Monday, 02. March',
+    dateStart: '2020-03-02 00:00"',
     bgColor: '#dfe4ea'
   },
   {
     id: 2,
-    title: 'Tuesday, 03. March',
+    dateEnd: '2020-03-04 00:00',
     bgColor: '#ced6e0'
   }
 ]

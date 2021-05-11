@@ -8,7 +8,7 @@
       :style="{ width: dateRowWidth +'%' }"
     >
     <template v-for="item of date">
-      <timeaxis-date  :key="item.id" :dateTitle="item.title" :dateTitleBackground="item.bgColor"></timeaxis-date>
+      <timeaxis-date  :key="item.id" :dateData="item"></timeaxis-date>
     </template>
     </div>
   </div>
